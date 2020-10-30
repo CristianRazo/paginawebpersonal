@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    
+    font-family: Georgia, Times, serif;
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.main{
+    padding-top: 6rem;
+}
+.nombre{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.ocupacion{
+    margin: 0;
+    font-size: 1.3rem;
+}
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 1rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+    .header a{
+        
+        font-size: 1.1rem;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+   
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+    .navigation ul li {
+        display: inline-block;
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.6s linear;
+            border-radius: 5px;
+        }
+
+        .navigation ul li a:hover {
+            background: #7c8ef3;
+        }
+
+.footer {
+    background: #bbb3b3;
+    padding: 1.5rem 0;
+    text-align: center;
+
+}
+
+.perfil {
+    border: 3px  black;
+    border-radius: 50%;
+}
+
+@media  only screen and (max-width: 767px){
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+      
+    }
+
+    .navigation{
+        width: 100%;
+        /*margin-top: 1rem;*/
+
+    }
+        .navigation ul {
+            display: none;
+        }
+
+        .navigation ul.show {
+            display: block;
+        }
+
+        .navigation ul li {
+            display: block;
+        }
+    
+            .navigation ul li a {
+                display: block;
+                padding: 0.5rem 0;
+                transition: all 0.6s linear;
+                border-radius: 5px;
+            }
+    
+            .navigation ul li a:hover {
+                background: #7c8ef3;
+            }
+
+
+}
+
+
+
